@@ -1,11 +1,14 @@
 package org.example;
 
-public interface Swimmable extends Movable{
+public interface Drivable extends Movable{
     @Override
     int getDirection();
 
     @Override
     int[] getPosition();
+
+    @Override
+    int getSpeed();
 
     @Override
     default void move() {
@@ -21,9 +24,7 @@ public interface Swimmable extends Movable{
     }
 
     @Override
-    int getSpeed();
-
-    default void swim() {
-        System.out.println(this.getClass().getSimpleName() + " is swimming!");
+    default void drive() {
+        System.out.println(this.getClass().getSimpleName() + " is being driven!");
     }
 }

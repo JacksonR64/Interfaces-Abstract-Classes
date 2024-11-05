@@ -1,7 +1,7 @@
 package org.example;
 
-public abstract class Vehicle {
-    public void move() {
+import java.util.List;
 
-    }
+public abstract class Vehicle extends Entities {
+
 }
